@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <form action="Login" method="post">
+            <input type="text" name="name" placeholder="Имя" />
+            <input type="password" name="password" placeholder="Пароль" />
+            <button>Вход</button>
+        </form>
+        @Html.ActionLink("Нет аккаунта? Зарегистрируйся!", "Registrate", "Home");
+    </div>
+</body>
+</html>
